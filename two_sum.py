@@ -40,3 +40,11 @@ for i in range(l):
     for j in range(i+1,l):
         if nums[i]+nums[j]==target:
             print([i,j])
+         #or
+class Solution:
+    def twoSum(self, nums, target):
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
+       
